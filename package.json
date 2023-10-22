@@ -1,0 +1,40 @@
+{
+  "name": "26f-sutdio-fastify",
+  "description": "This project was bootstrapped with Fastify-CLI.",
+  "version": "1.0.0",
+  "main": "server.ts",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "node esbuild.mjs",
+    "dev": "tsx watch server.ts",
+    "start": "node esbuild.mjs && node build/server.js",
+    "format": "prettier --write config.ts server.ts src/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/autoload": "^5.8.0",
+    "@fastify/cors": "^8.4.0",
+    "@fastify/sensible": "^5.5.0",
+    "chalk": "^5.3.0",
+    "fastify": "^4.24.3",
+    "fastify-graceful-shutdown": "^3.5.1",
+    "fastify-plugin": "^4.5.1",
+    "toml": "^3.0.0",
+    "ts-date": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.7",
+    "ajv": "^8.12.0",
+    "esbuild": "^0.19.5",
+    "esbuild-plugin-tsc": "^0.4.0",
+    "fastify-tsconfig": "^2.0.0",
+    "glob": "^10.3.10",
+    "prettier": "^3.0.3",
+    "tsx": "^3.14.0",
+    "typescript": "^5.2.2"
+  }
+}

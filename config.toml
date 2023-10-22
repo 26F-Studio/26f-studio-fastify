@@ -1,0 +1,4 @@
+[server]
+close_delay = 500
+host = "localhost"
+port = 80
